@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Z01NK's Cozy Art Shop</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #2a004f, #6a00ff);
+      color: white;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 10px #fff;
+    }
+    img {
+      max-width: 300px;
+      margin: 20px;
+      border: 2px solid white;
+    }
+    .no-steal {
+      pointer-events: none;
+      user-select: none;
+    }
+  </style>
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</head>
+<body>
+  <h1>Welcome to Z01NK's Cozy Art Shop!</h1>
+  <p>✨ Cosmic vibes. Cozy art. No stealing! ✨</p>
+  <img src="https://via.placeholder.com/300x300.png?text=Your+Art+Here" class="no-steal">
+</body>
+</html>
