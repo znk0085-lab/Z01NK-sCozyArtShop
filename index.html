@@ -1,36 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Z01NK's Cozy Art Shop</title>
+  <meta charset="UTF-8">
+  <title>Z01NK’s Cozy Art Shop</title>
   <style>
     body {
-      background: linear-gradient(to bottom right, #2a004f, #6a00ff);
-      color: white;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top left, #3a0066, #1a0033);
       font-family: 'Comic Sans MS', cursive;
+      color: #fff;
       text-align: center;
-      padding: 50px;
+      user-select: none;
     }
+
     h1 {
       font-size: 3em;
-      text-shadow: 0 0 10px #fff;
+      margin-top: 50px;
+      text-shadow: 0 0 10px #cc99ff, 0 0 20px #9933ff;
     }
-    img {
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .art {
       max-width: 300px;
-      margin: 20px;
-      border: 2px solid white;
-    }
-    .no-steal {
+      border: 3px solid white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #cc99ff;
+      margin-bottom: 30px;
       pointer-events: none;
-      user-select: none;
+    }
+
+    .footer {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 50px;
     }
   </style>
   <script>
+    // Disable right-click
     document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Disable drag-to-save
+    document.addEventListener('dragstart', e => e.preventDefault());
   </script>
 </head>
 <body>
-  <h1>Welcome to Z01NK's Cozy Art Shop!</h1>
-  <p>✨ Cosmic vibes. Cozy art. No stealing! ✨</p>
-  C:\Users\Eva\OneDrive\Pictures\Screenshots\Screenshot 2025-11-20 171516.png
+  <h1>Welcome to Z01NK’s Cozy Cosmic Corner!</h1>
+  <p>✨ Digital dreams. Cozy vibes. Art by Eva. ✨</p>
+  
+  <div class="footer">© 2025 Z01NK. No stealing, please 💜</div>
 </body>
 </html>
